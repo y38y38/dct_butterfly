@@ -1,0 +1,14 @@
+Vivado Simulator 2020.1
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: /tools/Xilinx/Vivado/2020.1/bin/unwrapped/lnx64.o/xelab -wto 2b6643b63bd1412d95286bc8e94cd7d1 --incr --debug typical --relax --mt 8 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot test_dct2_behav xil_defaultlib.test_dct2 xil_defaultlib.glbl -log elaborate.log 
+Using 8 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+ERROR: [VRFC 10-395] cannot assign a packed type to an unpacked type [/home/y/project/array2/array2.srcs/sources_1/new/array.sv:42]
+ERROR: [VRFC 10-395] cannot assign an unpacked type to a packed type [/home/y/project/array2/array2.srcs/sources_1/new/array.sv:44]
+ERROR: [VRFC 10-395] cannot assign a packed type to an unpacked type [/home/y/project/array2/array2.srcs/sources_1/new/array.sv:124]
+ERROR: [VRFC 10-395] cannot assign an unpacked type to a packed type [/home/y/project/array2/array2.srcs/sources_1/new/array.sv:126]
+ERROR: [VRFC 10-395] cannot assign an unpacked type to a packed type [/home/y/project/array2/array2.srcs/sources_1/new/dct_butterfly.sv:29]
+WARNING: [VRFC 10-3283] element index 8 into 'sl_output_enable' is out of bounds [/home/y/project/array2/array2.srcs/sources_1/new/array.sv:43]
+WARNING: [VRFC 10-3283] element index 8 into 's3_output_enable' is out of bounds [/home/y/project/array2/array2.srcs/sources_1/new/array.sv:125]
+ERROR: [XSIM 43-3322] Static elaboration of top level Verilog design unit(s) in library work failed.
