@@ -1,0 +1,12 @@
+
+{ 
+    crc :  5883676917733391942  , 
+    ccp_crc :  0  , 
+    cmdline : " -wto 2b6643b63bd1412d95286bc8e94cd7d1 --incr --debug typical --relax --mt 8 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot test_dct2_behav xil_defaultlib.test_dct2 xil_defaultlib.glbl" , 
+    buildDate : "May 27 2020" , 
+    buildTime : "19:59:15" , 
+    linkCmd : "/usr/bin/gcc -Wa,-W  -O -fPIC  -m64  -Wl,--no-as-needed  -Wl,--unresolved-symbols=ignore-all  -o \"xsim.dir/test_dct2_behav/xsimk\"   \"xsim.dir/test_dct2_behav/obj/xsim_0.lnx64.o\" \"xsim.dir/test_dct2_behav/obj/xsim_1.lnx64.o\" -L\"/tools/Xilinx/Vivado/2020.1/lib/lnx64.o\" -lrdi_simulator_kernel   -lrdi_simbridge_kernel" , 
+    aggregate_nets : 
+    [ 
+    ] 
+} 

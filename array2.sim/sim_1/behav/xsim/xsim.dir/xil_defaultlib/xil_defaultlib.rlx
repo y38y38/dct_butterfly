@@ -3,6 +3,7 @@
 May 27 2020
 19:59:15
 /home/y/project/array2/array2.sim/sim_1/behav/xsim/glbl.v,1590624368,verilog,,,,glbl,,,,,,,,
-/home/y/project/array2/array2.srcs/sim_1/imports/new/test_dct2.sv,1615727072,systemVerilog,,,,test_dct2,,,,,,,,
-/home/y/project/array2/array2.srcs/sources_1/new/array.sv,1615824471,systemVerilog,,/home/y/project/array2/array2.srcs/sources_1/new/dct_butterfly.sv,,array,,,,,,,,
-/home/y/project/array2/array2.srcs/sources_1/new/dct_butterfly.sv,1615727640,systemVerilog,,/home/y/project/array2/array2.srcs/sim_1/imports/new/test_dct2.sv,,dct_butterfly,,,,,,,,
+/home/y/project/array2/array2.srcs/sim_1/imports/new/test_dct2.sv,1616853297,systemVerilog,,,,test_dct2,,,,,,,,
+/home/y/project/array2/array2.srcs/sim_1/new/test_butterfly.sv,1616854030,systemVerilog,,,,test_butterfly,,,,,,,,
+/home/y/project/array2/array2.srcs/sources_1/new/array.sv,1616864996,systemVerilog,,/home/y/project/array2/array2.srcs/sources_1/new/dct_butterfly.sv,,array,,,,,,,,
+/home/y/project/array2/array2.srcs/sources_1/new/dct_butterfly.sv,1616860836,systemVerilog,,/home/y/project/array2/array2.srcs/sim_1/imports/new/test_dct2.sv,,dct_butterfly,,,,,,,,

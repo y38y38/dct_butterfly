@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="test_butterfly_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="glbl" />
+            <top_module name="test_butterfly" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="0fs"></ZoomStartTime>
+      <ZoomEndTime time="236465fs"></ZoomEndTime>
+      <Cursor1Time time="176000fs"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="222"></NameColumnWidth>
+      <ValueColumnWidth column_width="96"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="19" />
+   <wvobject type="logic" fp_name="/test_butterfly/CLOCK">
+      <obj_property name="ElementShortName">CLOCK</obj_property>
+      <obj_property name="ObjectShortName">CLOCK</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/test_butterfly/RESET">
+      <obj_property name="ElementShortName">RESET</obj_property>
+      <obj_property name="ObjectShortName">RESET</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/test_butterfly/ENABLE">
+      <obj_property name="ElementShortName">ENABLE</obj_property>
+      <obj_property name="ObjectShortName">ENABLE</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/test_butterfly/DATA">
+      <obj_property name="ElementShortName">DATA[0:7][31:0]</obj_property>
+      <obj_property name="ObjectShortName">DATA[0:7][31:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/test_butterfly/OUT_ENABLE">
+      <obj_property name="ElementShortName">OUT_ENABLE</obj_property>
+      <obj_property name="ObjectShortName">OUT_ENABLE</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/test_butterfly/OUT_DATA">
+      <obj_property name="ElementShortName">OUT_DATA[0:7][31:0]</obj_property>
+      <obj_property name="ObjectShortName">OUT_DATA[0:7][31:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/test_butterfly/STEP">
+      <obj_property name="ElementShortName">STEP[31:0]</obj_property>
+      <obj_property name="ObjectShortName">STEP[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/test_butterfly/TEST_TIME">
+      <obj_property name="ElementShortName">TEST_TIME[31:0]</obj_property>
+      <obj_property name="ObjectShortName">TEST_TIME[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/test_butterfly/dct_butterfly_inst/s1">
+      <obj_property name="ElementShortName">s1[0:7][31:0]</obj_property>
+      <obj_property name="ObjectShortName">s1[0:7][31:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/test_butterfly/dct_butterfly_inst/s2">
+      <obj_property name="ElementShortName">s2[0:7][31:0]</obj_property>
+      <obj_property name="ObjectShortName">s2[0:7][31:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/test_butterfly/dct_butterfly_inst/s3">
+      <obj_property name="ElementShortName">s3[0:7][31:0]</obj_property>
+      <obj_property name="ObjectShortName">s3[0:7][31:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/test_butterfly/dct_butterfly_inst/s4">
+      <obj_property name="ElementShortName">s4[0:7][31:0]</obj_property>
+      <obj_property name="ObjectShortName">s4[0:7][31:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/test_butterfly/dct_butterfly_inst/s5">
+      <obj_property name="ElementShortName">s5[0:7][31:0]</obj_property>
+      <obj_property name="ObjectShortName">s5[0:7][31:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/test_butterfly/dct_butterfly_inst/stage1_out_enable">
+      <obj_property name="ElementShortName">stage1_out_enable</obj_property>
+      <obj_property name="ObjectShortName">stage1_out_enable</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/test_butterfly/dct_butterfly_inst/s5_out_enable">
+      <obj_property name="ElementShortName">s5_out_enable</obj_property>
+      <obj_property name="ObjectShortName">s5_out_enable</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/test_butterfly/dct_butterfly_inst/s4_out_enable">
+      <obj_property name="ElementShortName">s4_out_enable</obj_property>
+      <obj_property name="ObjectShortName">s4_out_enable</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/test_butterfly/dct_butterfly_inst/s3_out_enable">
+      <obj_property name="ElementShortName">s3_out_enable</obj_property>
+      <obj_property name="ObjectShortName">s3_out_enable</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/test_butterfly/dct_butterfly_inst/stage2_out_enable">
+      <obj_property name="ElementShortName">stage2_out_enable</obj_property>
+      <obj_property name="ObjectShortName">stage2_out_enable</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/test_butterfly/dct_butterfly_inst/stage1_out_enable">
+      <obj_property name="ElementShortName">stage1_out_enable</obj_property>
+      <obj_property name="ObjectShortName">stage1_out_enable</obj_property>
+   </wvobject>
+</wave_config>

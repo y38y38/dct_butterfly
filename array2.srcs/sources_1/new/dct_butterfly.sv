@@ -24,9 +24,9 @@ module dct_butterfly(
 	input CLOCK,
 	input RESET,
 	input ENABLE,
-	input [12:0] DATA[8],
+	input [31:0] DATA[8],
 	output OUT_ENABLE,
-	output [15:0] OUT_DATA[8]
+	output [31:0] OUT_DATA[8]
     );
 
 	reg signed [31:0] s1[8];
@@ -86,8 +86,8 @@ module dct_butterfly(
 				s2[2] <=s1[1] - s1[2];
 				s2[3] <=s1[0] - s1[3];
 				s2[4] <=s1[4];
-				s2[5] <=((s1[6] * MATH_COS_PI_4)>>16) - ((s1[5] * MATH_COS_PI_4) >> 16);
-				s2[6] <=((s1[6] * MATH_COS_PI_4)>>16) + ((s1[5] * MATH_COS_PI_4)>> 16);
+				s2[5] <=(((s1[6] * MATH_COS_PI_4)>>>16) - ((s1[5] * MATH_COS_PI_4) >>> 16));
+				s2[6] <=((s1[6] * MATH_COS_PI_4)>>>16) + ((s1[5] * MATH_COS_PI_4)>>> 16);
 				s2[7] <=s1[7];
 				stage2_out_enable <= 1'b1;
 			end else begin
@@ -118,10 +118,12 @@ module dct_butterfly(
 
 		end else begin
 			if (stage2_out_enable) begin
-				s3[0] <=((s2[0] * MATH_COS_PI_4)>>16) + ((s2[1] * MATH_COS_PI_4)>>16);
-				s3[1] <=((s1[0] * MATH_COS_PI_4)>>16) - ((s2[1] * MATH_COS_PI_4)>>16);
-				s3[2] <=((s2[2] * MATH_SIN_PI_8)>>16) + ((s2[3] * MATH_COS_PI_8)>>16);
-				s3[3] <=((s2[3] * MATH_COS_3_PI_8)>>16) - ((s2[2] * MATH_SIN_3_PI_8)>>16);
+				s3[0] <=((s2[0] * MATH_COS_PI_4)>>>16) + ((s2[1] * MATH_COS_PI_4)>>>16);
+				
+				s3[1] <=((s2[0] * MATH_COS_PI_4)>>>16) - ((s2[1] * MATH_COS_PI_4)>>>16);
+
+				s3[2] <=((s2[2] * MATH_SIN_PI_8)>>>16) + ((s2[3] * MATH_COS_PI_8)>>>16);
+				s3[3] <=((s2[3] * MATH_COS_3_PI_8)>>>16) - ((s2[2] * MATH_SIN_3_PI_8)>>>16);
 				s3[4] <=s2[4] + s2[5];
 				s3[5] <=s2[4] - s2[5];
 				s3[6] <=s2[7] - s2[6];
@@ -164,10 +166,12 @@ module dct_butterfly(
 				s4[1] = s3[1];
 				s4[2] = s3[2];
 				s4[3] = s3[3];
-				s4[4] = ((s3[4] * MATH_SIN_PI_16>>16)) + ((s3[7] * MATH_COS_PI_16)>>16);
-				s4[5] = ((s3[5] * MATH_SIN_5_PI_16)>>16) + ((s3[6] * MATH_COS_5_PI_16)>>16);
-				s4[6] = ((s3[6] * MATH_COS_3_PI_16)>>16) + ((s3[5] * MATH_SIN_3_PI_16)>>16);
-				s4[7] = ((s3[7] * MATH_COS_7_PI_16)>>16) + ((s3[4] * MATH_SIN_7_PI_16)>>16);
+				s4[4] = ((s3[4] * MATH_SIN_PI_16>>>16)) + ((s3[7] * MATH_COS_PI_16)>>>16);
+				s4[5] = ((s3[5] * MATH_SIN_5_PI_16)>>>16) + ((s3[6] * MATH_COS_5_PI_16)>>>16);
+
+				s4[6] = ((s3[6] * MATH_COS_3_PI_16)>>>16) - ((s3[5] * MATH_SIN_3_PI_16)>>>16);
+
+				s4[7] = ((s3[7] * MATH_COS_7_PI_16)>>>16) - ((s3[4] * MATH_SIN_7_PI_16)>>>16);
 				s4_out_enable <= 1'b1;
 			end else begin
 				s4_out_enable <= 1'b0;
@@ -191,29 +195,29 @@ module dct_butterfly(
 			s5_out_enable <= 1'b0;
 		end else begin
 			if (s4_out_enable) begin
-				s5[0] = s4[0] >>1;
-				s5[1] = s4[4] >>1;
-				s5[2] = s4[2] >>1;
-				s5[3] = s4[6] >>1;
-				s5[4] = s4[1] >>1;
-				s5[5] = s4[5] >>1;
-				s5[6] = s4[3] >>1;
-				s5[7] = s4[7] >>1;
+				s5[0] = s4[0] >>>1;
+				s5[1] = s4[4] >>>1;
+				s5[2] = s4[2] >>>1;
+				s5[3] = s4[6] >>>1;
+				s5[4] = s4[1] >>>1;
+				s5[5] = s4[5] >>>1;
+				s5[6] = s4[3] >>>1;
+				s5[7] = s4[7] >>>1;
 				s5_out_enable <= 1'b1;
-			end begin
+			end else begin
 				s5_out_enable <= 1'b0;
 			end
 		end
 	end
 
 
-	assign OUT_DATA[0] = s3[0][15:0];
-	assign OUT_DATA[1] = s3[1][15:0];
-	assign OUT_DATA[2] = s3[2][15:0];
-	assign OUT_DATA[3] = s3[3][15:0];
-	assign OUT_DATA[4] = s3[4][15:0];
-	assign OUT_DATA[5] = s3[5][15:0];
-	assign OUT_DATA[6] = s3[6][15:0];
-	assign OUT_DATA[7] = s3[7][15:0];
+	assign OUT_DATA[0] = s5[0];
+	assign OUT_DATA[1] = s5[1];
+	assign OUT_DATA[2] = s5[2];
+	assign OUT_DATA[3] = s5[3];
+	assign OUT_DATA[4] = s5[4];
+	assign OUT_DATA[5] = s5[5];
+	assign OUT_DATA[6] = s5[6];
+	assign OUT_DATA[7] = s5[7];
 	assign OUT_ENABLE = s5_out_enable;
 endmodule

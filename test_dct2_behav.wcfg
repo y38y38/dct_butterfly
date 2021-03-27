@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="test_dct2_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="glbl" />
+            <top_module name="test_dct2" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="0fs"></ZoomStartTime>
+      <ZoomEndTime time="238863fs"></ZoomEndTime>
+      <Cursor1Time time="176000fs"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="303"></NameColumnWidth>
+      <ValueColumnWidth column_width="140"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="7" />
+   <wvobject type="array" fp_name="/test_dct2/OUT_DATA">
+      <obj_property name="ElementShortName">OUT_DATA[0:7][0:7][31:0]</obj_property>
+      <obj_property name="ObjectShortName">OUT_DATA[0:7][0:7][31:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/test_dct2/dct_inst/s3_output_enable">
+      <obj_property name="ElementShortName">s3_output_enable[0:7]</obj_property>
+      <obj_property name="ObjectShortName">s3_output_enable[0:7]</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/test_dct2/dct_inst/s2_enable_all">
+      <obj_property name="ElementShortName">s2_enable_all</obj_property>
+      <obj_property name="ObjectShortName">s2_enable_all</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/test_dct2/dct_inst/s2_enable">
+      <obj_property name="ElementShortName">s2_enable[7:0]</obj_property>
+      <obj_property name="ObjectShortName">s2_enable[7:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/test_dct2/dct_inst/sl_output_enable">
+      <obj_property name="ElementShortName">sl_output_enable[0:7]</obj_property>
+      <obj_property name="ObjectShortName">sl_output_enable[0:7]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/test_dct2/dct_inst/OUT_DATA">
+      <obj_property name="ElementShortName">OUT_DATA[0:7][0:7][31:0]</obj_property>
+      <obj_property name="ObjectShortName">OUT_DATA[0:7][0:7][31:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+      <obj_property name="isExpanded"></obj_property>
+      <wvobject type="array" fp_name="/test_dct2/dct_inst/OUT_DATA[0]">
+         <obj_property name="ElementShortName">[0][0:7][31:0]</obj_property>
+         <obj_property name="ObjectShortName">[0][0:7][31:0]</obj_property>
+         <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/test_dct2/dct_inst/OUT_DATA[1]">
+         <obj_property name="ElementShortName">[1][0:7][31:0]</obj_property>
+         <obj_property name="ObjectShortName">[1][0:7][31:0]</obj_property>
+         <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/test_dct2/dct_inst/OUT_DATA[2]">
+         <obj_property name="ElementShortName">[2][0:7][31:0]</obj_property>
+         <obj_property name="ObjectShortName">[2][0:7][31:0]</obj_property>
+         <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/test_dct2/dct_inst/OUT_DATA[3]">
+         <obj_property name="ElementShortName">[3][0:7][31:0]</obj_property>
+         <obj_property name="ObjectShortName">[3][0:7][31:0]</obj_property>
+         <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/test_dct2/dct_inst/OUT_DATA[4]">
+         <obj_property name="ElementShortName">[4][0:7][31:0]</obj_property>
+         <obj_property name="ObjectShortName">[4][0:7][31:0]</obj_property>
+         <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/test_dct2/dct_inst/OUT_DATA[5]">
+         <obj_property name="ElementShortName">[5][0:7][31:0]</obj_property>
+         <obj_property name="ObjectShortName">[5][0:7][31:0]</obj_property>
+         <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/test_dct2/dct_inst/OUT_DATA[6]">
+         <obj_property name="ElementShortName">[6][0:7][31:0]</obj_property>
+         <obj_property name="ObjectShortName">[6][0:7][31:0]</obj_property>
+         <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/test_dct2/dct_inst/OUT_DATA[7]">
+         <obj_property name="ElementShortName">[7][0:7][31:0]</obj_property>
+         <obj_property name="ObjectShortName">[7][0:7][31:0]</obj_property>
+         <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/test_dct2/dct_inst/OUT_DATA[0]">
+         <obj_property name="ElementShortName">[0][0:7][31:0]</obj_property>
+         <obj_property name="ObjectShortName">[0][0:7][31:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/test_dct2/dct_inst/OUT_DATA[1]">
+         <obj_property name="ElementShortName">[1][0:7][31:0]</obj_property>
+         <obj_property name="ObjectShortName">[1][0:7][31:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/test_dct2/dct_inst/OUT_DATA[2]">
+         <obj_property name="ElementShortName">[2][0:7][31:0]</obj_property>
+         <obj_property name="ObjectShortName">[2][0:7][31:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/test_dct2/dct_inst/OUT_DATA[3]">
+         <obj_property name="ElementShortName">[3][0:7][31:0]</obj_property>
+         <obj_property name="ObjectShortName">[3][0:7][31:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/test_dct2/dct_inst/OUT_DATA[4]">
+         <obj_property name="ElementShortName">[4][0:7][31:0]</obj_property>
+         <obj_property name="ObjectShortName">[4][0:7][31:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/test_dct2/dct_inst/OUT_DATA[5]">
+         <obj_property name="ElementShortName">[5][0:7][31:0]</obj_property>
+         <obj_property name="ObjectShortName">[5][0:7][31:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/test_dct2/dct_inst/OUT_DATA[6]">
+         <obj_property name="ElementShortName">[6][0:7][31:0]</obj_property>
+         <obj_property name="ObjectShortName">[6][0:7][31:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/test_dct2/dct_inst/OUT_DATA[7]">
+         <obj_property name="ElementShortName">[7][0:7][31:0]</obj_property>
+         <obj_property name="ObjectShortName">[7][0:7][31:0]</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject type="logic" fp_name="/test_dct2/CLOCK">
+      <obj_property name="ElementShortName">CLOCK</obj_property>
+      <obj_property name="ObjectShortName">CLOCK</obj_property>
+   </wvobject>
+</wave_config>
